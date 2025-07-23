@@ -1,6 +1,7 @@
 Placa de desarrollo - ESP32 WROOM devkitc v4
 
 Sensores:
-  - Sensor de temperatura DS18B20, tipo sonda
-  - Sensor de pH PH-4502C, modelo con sonda de electrodo de pH
-  - Módulo de sensor de gas MQ-4, con salida analógica y digital
+  - Termopar tipo K y MAX6675
+  - Dht22/Dht11
+  - PH-4502C, modelo con sonda de electrodo de pH
+  - MQ-4, gas metano
