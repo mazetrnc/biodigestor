@@ -2,8 +2,8 @@
 #include <WebServer.h>
 
 // Configuración WiFi
-const char* ssid = "JJMM-TISSU_ROSE";
-const char* password = "trb12345678";
+const char* ssid = "ssid";
+const char* password = "contraseña";
 
 // Variable compartida para la temperatura
 extern float tempC;
