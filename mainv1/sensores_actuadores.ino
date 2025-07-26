@@ -4,7 +4,7 @@
 
 // Definición de pines
 #define MQ_PIN 34          // Pin ADC (GPIO34)
-#define SOIL_PIN 35        // Pin para el sensor de humedad del suelo (HW-103)
+#define SOIL_PIN 4        // Pin para el sensor de humedad del suelo (HW-103)
 #define RL 10.0            // Resistencia de carga en kΩ (ajustada para 3.3V)
 #define RATIO_CLEAN_AIR 9.83 // Rs/R0 en aire limpio (datasheet)
 #define PREHEAT_MIN 0.5     // Minutos mínimo de precalentamiento (recomendado 48h)
