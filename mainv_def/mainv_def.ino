@@ -92,7 +92,7 @@ void handleData() {
   json += "\"internalTemp\":" + String(internalTemp) + ",";
   json += "\"lpgPPM\":" + String(lpgPPM) + ",";
   json += "\"mq2AnalogValue\":" + String(mq2AnalogValue);
- // json += "\"ph\":" + String(ph);
+  json += "\"ph\":" + String(ph);
   json += "}";
   
   server.send(200, "application/json", json);
@@ -196,6 +196,11 @@ void handleRoot() {
       <div class="sensor">
         <h2>Valor Analógico MQ-2</h2>
         <div id="mq2Analog" class="value">--</div>
+      </div>
+      
+      <div class="sensor">
+        <h2>pH</h2>
+        <div id="ph" class="value">--</div>
       </div>
     </div>
   </body>
