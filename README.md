@@ -22,7 +22,7 @@ La concentración de gases generados en el biodigestor, principalmente metano y 
 
 El nivel de pH del medio se mide utilizando el sensor **PH-4502C**. Para mejorar la precisión de la medición, el sistema realiza múltiples lecturas consecutivas, ordena los valores y promedia los datos intermedios para reducir el ruido. Posteriormente, el valor analógico es convertido a voltaje y transformado en unidades de pH mediante una ecuación lineal calibrada, lo que permite evaluar la acidez o alcalinidad del biodigestor.
 
-<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/10c13db5-3a43-4bc4-a190-be297949cfae" />
+<img width="330" height="330" alt="image" src="https://github.com/user-attachments/assets/10c13db5-3a43-4bc4-a190-be297949cfae" />
 
 Una vez que todos los sensores han sido leídos mediante la función updateSensors(), los datos son procesados y almacenados en variables globales dentro de la ESP32. Posteriormente, el microcontrolador utiliza su conectividad WiFi integrada para establecer una conexión con una red inalámbrica disponible.
 
