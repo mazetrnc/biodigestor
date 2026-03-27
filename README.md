@@ -31,3 +31,21 @@ A continuación, el sistema realiza una petición HTTP al servidor de la platafo
 Finalmente, ThingSpeak almacena los datos en la nube, permitiendo su visualización en tiempo real, así como el análisis histórico mediante gráficas. El sistema respeta el intervalo mínimo de actualización de la plataforma, enviando datos aproximadamente cada 20 minutos, lo que garantiza un funcionamiento estable y evita el rechazo de las solicitudes.
 
 En conjunto, este sistema integra sensores ambientales, procesamiento de señales y conectividad IoT para crear una herramienta capaz de monitorear el estado interno de un biodigestor, facilitando la supervisión del proceso biológico y la toma de decisiones basada en datos.
+
+<h3>Desarrollo de un PCB para la Optimización del Sistema</h3>
+
+Para complementar el desarrollo del sistema, se diseñó una placa de circuito impreso (PCB) utilizando la herramienta KiCad, la cual fue posteriormente fabricada mediante el servicio de JLCPCB. Este paso representó una mejora significativa respecto al prototipo inicial implementado sobre protoboard, ya que permitió optimizar la disposición de los componentes, reducir el ruido eléctrico y aumentar la confiabilidad general del sistema.
+
+<img width="694" height="452" alt="image" src="https://github.com/user-attachments/assets/017ae046-32bd-475b-b364-1e782f011fc3" />
+
+A diferencia del montaje previo, donde se empleaban numerosos cables y conexiones tipo jumper, la PCB integra todas las rutas eléctricas de manera ordenada y permanente. Esto no solo disminuye la probabilidad de fallos por falsos contactos, sino que también facilita el ensamblaje, mantenimiento y replicabilidad del proyecto. Además, el diseño fue adaptado específicamente a los sensores utilizados, asegurando una correcta distribución de pines y una integración más eficiente con la ESP32 DevKit V1.
+
+<img width="498" height="560" alt="image" src="https://github.com/user-attachments/assets/2006ae65-1bfc-4e15-b16b-1f10609a8f69" />
+
+Otro aspecto relevante es la incorporación de divisores de voltaje implementados con componentes SMD (Surface Mount Device). En el prototipo inicial, estas resistencias estaban soldadas de manera improvisada (“al aire”) y conectadas mediante jumpers, lo que podía introducir errores de medición e inestabilidad. En la PCB, estos divisores están correctamente dimensionados e integrados en el diseño, mejorando la precisión de las lecturas analógicas y la estética del circuito.
+
+<img width="554" height="614" alt="image" src="https://github.com/user-attachments/assets/792e3aa2-69f0-4564-86bd-60b07e7cb6b5" />
+
+Asimismo, la placa incluye un espacio dedicado para la integración de un regulador de voltaje tipo step-up/step-down, capaz de proporcionar una salida estable de 5 V a partir de un rango de entrada entre 2 V y 16 V. Esta característica brinda mayor flexibilidad en la alimentación del sistema, permitiendo el uso de distintas fuentes de energía, como baterías o fuentes externas, sin comprometer el funcionamiento de los sensores ni del microcontrolador.
+
+Finalmente, se añadieron capacitores de desacoplo ubicados estratégicamente cerca de la entrada de alimentación de la ESP32. Estos componentes cumplen la función de filtrar ruidos y estabilizar el voltaje, lo cual es fundamental en sistemas con múltiples sensores analógicos y digitales, ya que contribuye a obtener mediciones más confiables y a proteger los dispositivos ante fluctuaciones en la alimentación.
