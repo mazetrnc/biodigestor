@@ -38,7 +38,7 @@ Para complementar el desarrollo del sistema, se diseñó una placa de circuito i
 
 <img width="716" height="452" alt="image" src="https://github.com/user-attachments/assets/1cc51407-9097-48b5-b93a-a5ff847e0b30" />
 
-[Esquemático del Sistema de Monitoreo](biodigestor/esquematico_biodigestor.pdf)
+[Esquemático del Sistema de Monitoreo](/esquematico_biodigestor.pdf)
 
 A diferencia del montaje previo, donde se empleaban numerosos cables y conexiones tipo jumper, la PCB integra todas las rutas eléctricas de manera ordenada y permanente. Esto no solo disminuye la probabilidad de fallos por falsos contactos, sino que también facilita el ensamblaje, mantenimiento y replicabilidad del proyecto. Además, el diseño fue adaptado específicamente a los sensores utilizados, asegurando una correcta distribución de pines y una integración más eficiente con la ESP32 DevKit V1.
 
