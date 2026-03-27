@@ -36,7 +36,7 @@ En conjunto, este sistema integra sensores ambientales, procesamiento de señale
 
 Para complementar el desarrollo del sistema, se diseñó una placa de circuito impreso (PCB) utilizando la herramienta KiCad, la cual fue posteriormente fabricada mediante el servicio de JLCPCB. Este paso representó una mejora significativa respecto al prototipo inicial implementado sobre protoboard, ya que permitió optimizar la disposición de los componentes, reducir el ruido eléctrico y aumentar la confiabilidad general del sistema.
 
-<img width="694" height="452" alt="image" src="https://github.com/user-attachments/assets/017ae046-32bd-475b-b364-1e782f011fc3" />
+<img width="640" height="364" alt="image" src="https://github.com/user-attachments/assets/2f0ca820-b32f-4a8a-8e74-c6104590adb6" />
 
 A diferencia del montaje previo, donde se empleaban numerosos cables y conexiones tipo jumper, la PCB integra todas las rutas eléctricas de manera ordenada y permanente. Esto no solo disminuye la probabilidad de fallos por falsos contactos, sino que también facilita el ensamblaje, mantenimiento y replicabilidad del proyecto. Además, el diseño fue adaptado específicamente a los sensores utilizados, asegurando una correcta distribución de pines y una integración más eficiente con la ESP32 DevKit V1.
 
