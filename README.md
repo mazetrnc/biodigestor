@@ -36,11 +36,11 @@ En conjunto, este sistema integra sensores ambientales, procesamiento de señale
 
 Para complementar el desarrollo del sistema, se diseñó una placa de circuito impreso (PCB) utilizando la herramienta KiCad, la cual fue posteriormente fabricada mediante el servicio de JLCPCB. Este paso representó una mejora significativa respecto al prototipo inicial implementado sobre protoboard, ya que permitió optimizar la disposición de los componentes, reducir el ruido eléctrico y aumentar la confiabilidad general del sistema.
 
-<img width="640" height="364" alt="image" src="https://github.com/user-attachments/assets/2f0ca820-b32f-4a8a-8e74-c6104590adb6" />
+<img width="716" height="452" alt="image" src="https://github.com/user-attachments/assets/1cc51407-9097-48b5-b93a-a5ff847e0b30" />
 
 A diferencia del montaje previo, donde se empleaban numerosos cables y conexiones tipo jumper, la PCB integra todas las rutas eléctricas de manera ordenada y permanente. Esto no solo disminuye la probabilidad de fallos por falsos contactos, sino que también facilita el ensamblaje, mantenimiento y replicabilidad del proyecto. Además, el diseño fue adaptado específicamente a los sensores utilizados, asegurando una correcta distribución de pines y una integración más eficiente con la ESP32 DevKit V1.
 
-<img width="498" height="560" alt="image" src="https://github.com/user-attachments/assets/2006ae65-1bfc-4e15-b16b-1f10609a8f69" />
+<img width="398" height="460" alt="image" src="https://github.com/user-attachments/assets/2006ae65-1bfc-4e15-b16b-1f10609a8f69" />
 
 Otro aspecto relevante es la incorporación de divisores de voltaje implementados con componentes SMD (Surface Mount Device). En el prototipo inicial, estas resistencias estaban soldadas de manera improvisada (“al aire”) y conectadas mediante jumpers, lo que podía introducir errores de medición e inestabilidad. En la PCB, estos divisores están correctamente dimensionados e integrados en el diseño, mejorando la precisión de las lecturas analógicas y la estética del circuito.
 
